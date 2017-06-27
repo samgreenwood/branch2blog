@@ -17,4 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::group(['middlware' => 'auth'], function()
+{
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/repositories')->uses('RepositoryController@index')->name('repositories.index');
+});
+
