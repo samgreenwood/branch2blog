@@ -1,5 +1,7 @@
 # Branch 2 Blog
 
+[![Build Status](https://travis-ci.org/samgreenwood/branch2blog.svg?branch=master)](https://travis-ci.org/samgreenwood/branch2blog)
+
 ## Introduction
 
 Create beautiful markdown from your git history, to help kick start your blog post.
