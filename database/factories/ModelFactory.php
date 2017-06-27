@@ -22,3 +22,16 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Repository::class, function(Faker\Generator $faker) {
+
+    return [
+        'url' => 'https://github.com/laravel/laravel.git'
+    ];
+});
+
+$factory->define(App\Post::class, function(Faker\Generator $faker) { 
+    return [
+        'name' => $faker->title
+    ];
+});
